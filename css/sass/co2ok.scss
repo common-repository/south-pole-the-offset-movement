@@ -1,0 +1,582 @@
+@import "./helpers/helpers.scss";
+
+.co2ok_container {
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    display: inline-block;
+    position: relative;
+    font-family: Roboto, sans-serif;
+    color:#606468;
+    z-index: 10;
+    margin-left: 3px;
+    cursor: pointer;
+
+    .co2ok_adaptive_color {
+        color: white;
+    }
+
+    .co2ok_payoff {
+         width: 100%;
+         margin-top: -22px;
+         font-size: 14px;
+         text-align: center;
+         font-family: $font;
+         font-style: normal;
+         font-weight: 500;
+         line-height: normal;
+         display: block;
+         letter-spacing: -0.0538461em;
+         //margin-left: -3%;
+         color: #4D5155;
+         width: 110%;
+         #p {
+             vertical-align: middle;
+             display: inline-block;
+             margin-left: -6px;
+            .co2ok_info_hitarea{
+                height: 72px;
+                width: 72px;
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 50%;
+                display: inline-block;
+                margin-left: -17px;
+                position: relative;
+                & img{
+                    width: 18px;
+                    margin-top: 25px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+
+
+     .co2ok_checkbox_container {
+
+         border-radius: 10px;
+         box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         display: block;
+         position: relative;
+         height: 54px;
+
+         > * {
+           background-position: center;
+         }
+
+         #checkbox_label {
+           background: $white;
+           border-radius: $borderRadius;
+         }
+
+
+         .inner_checkbox_label {
+             &:after{
+                box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                 -webkit-box-sizing: border-box;
+                 position: absolute;
+                 top: -2px;
+                 bottom: -2px;
+                 left: -2px;
+                 right: -2px;
+                 content: '';
+                 z-index: -1;
+                 border-radius: 12px;
+            }
+
+             position: relative;
+             display: inline-block;;
+             font-size: 22px;
+             width: 100%;
+             height: 50px;
+             background-position: center;
+             background-size: 100%;
+             border-radius: 10px;
+             transition:all 0.4s ease;
+
+              > * {
+                 display: inline-block;
+                 vertical-align: middle;
+               }
+
+
+
+        }
+         #checkbox {
+             width: 26px;
+             height: 26px;
+             background: #E1E6E7;
+             box-shadow: inset 0px 2px 1px rgba(96, 100, 104, 0.3);
+             border-radius: 3px;
+             margin: 12px 0px 14px 8px;
+        }
+
+         #co2ok_cart_field {
+             display: none !important;
+        }
+
+
+
+         &.unselected {
+
+            .make {
+                margin-bottom: 2px;
+                font-size: 20px;
+                font-family: Roboto, sans-serif;
+                color: #606468;
+                font-weight: 500;
+            }
+
+        }
+         &.selected {
+             .make{
+                 color: white;
+                 margin-bottom: 2px;
+                 font-size: 20px;
+                 font-family: Roboto, sans-serif;
+                 font-weight: 500;
+             }
+
+             .inner_checkbox_label {
+
+             }
+             .co2ok_payoff{
+               margin-bottom: 400px;
+             }
+
+
+
+             #checkbox {
+                 padding: 2px;
+                 background-color: white;
+                 background-size: 80%;
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 background-image: url("../images/vinkje_co2ok.png") !important;
+                 font-size: 20px;
+            }
+        }
+    }
+}
+
+ img#co2ok_logo {
+     display: inline-block;
+     width: 62px;
+     vertical-align: middle;
+     margin: 5px 0px 0px 0px;
+}
+img#co2ok_logo_minimal {
+    display: inline-block;
+    width: 52px;
+    vertical-align: middle;
+    margin: 3px 0px 0px 0px;
+}
+.co2ok_logo_minimal_info {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    margin: 9px 0px 0px 0px;
+}
+.co2ok_logo_default_info {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    margin: 9px 0px 0px 0px;
+}
+ .co2ok_infobox_container {
+     position: absolute;
+     width: 350px;
+     background: white;
+     border-radius: 15px;
+     box-sizing: border-box;
+     font-family: Roboto, sans-serif;
+     font-size: 0.9em;
+     z-index: 999999;
+     display: none;
+     padding: 10px;
+     border: 3px solid #eee;
+     border-image-slice: 1;
+     @media #{$small} {
+        margin-left: -150px;
+        width: 300px;
+      }
+     &.ShowInfoBox{
+         display: block;
+         opacity: 1
+    }
+    .inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+
+      .svg-img {
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+        height: 50%;
+        width: 58%;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .svg-img-large {
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+        height: 60%; // 60
+        width: 65%; // 68
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .selectable-text {
+        text-decoration: none;
+        font-weight: 100;
+        color: black;
+        /* unvisited, visited, mouse over and selected link */
+        a:link, a:visited, a:hover, a:active {
+            color: black;
+        }
+      }
+      .text-block {
+        margin: 0px;
+        font-size: 1em;
+        line-height: normal;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #28db83;
+        text-decoration: none;
+
+        &.greyBorder {
+          border-color: #b8b8b8;
+        }
+      }
+
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    img, span {
+      display: inline-block;
+      vertical-align: middle;
+      color: #979797;
+      padding: 0px;
+    }
+    .minimal {
+        background-color: black;
+    }
+}
+
+.co2ok_videoRewardBox_container {
+    position: absolute;
+    width: 345px;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9em;
+    z-index: 999999;
+    display: none;
+    padding: 10px;
+    border: 3px solid #eee;
+    border-image-slice: 1;
+    @media #{$small} {
+       margin-left: -150px;
+       width: 300px;
+     }
+    &.ShowVideoRewardBox{
+        display: block;
+        opacity: 1;
+    }
+    &.VideoRewardBox-hidden{
+        display: none;
+        opacity: 0;
+    }
+   #co2ok_videoReward {
+       padding-bottom: 15px;
+   }
+}
+
+// Seperate parts for Default Button Design
+
+.co2ok_container_default {
+    width: 244px;
+    .co2ok_checkbox_container_default{
+        .inner_checkbox_label_default {
+            &:after {
+                @extend %gradient;
+            }
+            background: white;
+        }
+        &.selected {
+            color:white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+            text-shadow: 1px 1px 4px #929292;
+            .inner_checkbox_label_default {
+                @extend %gradient;
+            }
+            .compensation_amount_default {
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                color: white;
+                padding-left: 4px;
+                left: -10px;
+                margin-top: 12px;
+                margin-right: 10px;
+                float: right;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 0px;
+                font-family: Roboto, sans-serif;
+           }
+        }
+        &.unselected {
+            .compensation_amount_default {
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                color:#05B139;
+                padding-left: 4px;
+                left: -10px;
+                margin-top: 12px;
+                margin-right: 10px;
+                float: right;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 0px;
+                font-family: Roboto, sans-serif;
+           }
+           .make_minimal {
+            font-family: Roboto, sans-serif;
+            a:link, a:visited, a:hover, a:active{
+                letter-spacing: 0px;
+                font-family: Roboto, sans-serif;
+                color: #4D5155;
+                }
+           }
+        }
+    }
+}
+
+// Seperate parts for Minimal Button Design
+
+.co2ok_container_minimal {
+    width: 320px;
+    .co2ok_checkbox_container_minimal {
+
+        .co2ok_nolink {
+            color: inherit;
+            margin: 0px;
+            padding: 0px;
+            display: inherit;
+        }
+
+        .co2ok_adaptive_color {
+            color: white;
+        }
+        font-weight: 500;
+        &.selected {
+            box-shadow: none;
+            .inner_checkbox_label_minimal {
+                .comp_amount_label_minimal{
+                    @extend %gradient;
+                    color: #05B139;
+                }
+            }
+        }
+
+        .inner_checkbox_label_minimal {
+
+            .comp_amount_label_minimal{
+                    
+                background: #E1E6E7;
+                position: absolute;
+                display: inline-block;
+                font-size: 22px;
+                width: 72px;
+                height: 26px;
+                border-radius: 30px;
+                transition: all 0.4s ease;
+                margin-left: -3px;
+                padding: 5px;
+                border: 10px #06d367;
+                font: inherit;
+                vertical-align: baseline;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                top: 13px;
+                left: 160px;
+                content: '';
+                z-index: -1;
+                @extend %gradient;
+            
+
+                  > * {
+                     display: inline-block;
+                     vertical-align: middle;
+                   }
+
+                .inner_comp_amount_label_minimal {
+                background: white;
+                position: absolute;
+                display: inline-block;
+                font-size: 22px;
+                width: 68px;
+                height: 22px;
+                border-radius: 23px;
+                transition: all 0.4s ease;
+                margin: 0;
+                padding: 5px;
+                border: 10px #06d367;
+                font: inherit;
+                vertical-align: baseline;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                top: 2px;
+                bottom: -2px;
+                left: 2.5px;
+                right: -2px;
+                content: '';
+                z-index: -1;
+                @extend %gradient;
+                    
+                  > * {
+                     display: inline-block;
+                     vertical-align: middle;
+                   }
+
+                   .compensation_amount_minimal{
+                       position: absolute;
+                       margin: 0;
+                       font-size: 11pt;
+                       top: 50%;
+                       left: 50%;
+                       margin-right: -50%;
+                       transform: translate(-50%, -50%);
+                       letter-spacing: 0px;
+                        font-family: Roboto, sans-serif;
+                        margin-bottom: 2px;
+                        &.selected {
+                            color: #05B139;
+                        }
+                        &.unselected {
+                            color: #4D5155;
+                        }
+                        font-weight: 500;
+                   }
+                }
+            }
+
+                .co2ok_payoff_minimal {
+                    position: absolute;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    text-align: center;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    display: inline-block;
+                    letter-spacing: -0.0538461em;
+                    top: 19px;
+                    margin-left: 66px;
+                    color: #4D5155;
+                    #p_minimal {
+                        vertical-align: middle;
+                        display: inline-block;
+                        padding: none;
+                        margin-left: 7px;
+                        .co2ok_info_hitarea{
+                            height: 72px;
+                            width: 72px;
+                            background-color: rgba(0, 0, 0, 0);
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-left: -25px;
+                            position: relative;
+                            bottom: 30px;
+                            & img{
+                                width: 18px;
+                                margin-top: 27px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+        }
+
+        .co2ok_payoff_sentence_minimal {
+            position: relative;
+            font-size: 10pt;
+            left: 40.5px;
+            top: -12px;
+            letter-spacing: -0.0538461em;
+            font-family: Roboto, sans-serif;
+        }
+    }
+}

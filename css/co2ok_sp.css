@@ -1,0 +1,162 @@
+.co2ok_container_default .co2ok_checkbox_container_default .inner_checkbox_label_default:after, .co2ok_container_default .co2ok_checkbox_container_default.selected .inner_checkbox_label_default, .co2ok_container_minimal .co2ok_checkbox_container_minimal.selected .inner_checkbox_label_minimal .comp_amount_label_minimal, .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal, .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal {
+    background: -webkit-linear-gradient(#312c80 -50.09%, #312c80 51.05%, #312c80 56.81%, #312c80 100%);
+    background: -o-linear-gradient(#312c80 -50.09%, #312c80 51.05%, #312c80 56.81%, #312c80 100%);;
+    background: linear-gradient(#312c80 -50.09%, #312c80 51.05%, #312c80 56.81%, #312c80 100%); }
+
+.co2ok_container {
+    /* HTML5 display-role reset for older browsers */
+    display: inline-block;
+    position: relative;
+    font-family: Roboto, sans-serif;
+    color: #606468 !important;
+    z-index: 10;
+    margin-left: 3px;
+    cursor: pointer; }
+.co2ok_container html, .co2ok_container body, .co2ok_container div, .co2ok_container span, .co2ok_container applet, .co2ok_container object, .co2ok_container iframe,
+.co2ok_container h1, .co2ok_container h2, .co2ok_container h3, .co2ok_container h4, .co2ok_container h5, .co2ok_container h6, .co2ok_container p, .co2ok_container blockquote, .co2ok_container pre,
+.co2ok_container a, .co2ok_container abbr, .co2ok_container acronym, .co2ok_container address, .co2ok_container big, .co2ok_container cite, .co2ok_container code,
+.co2ok_container del, .co2ok_container dfn, .co2ok_container em, .co2ok_container ins, .co2ok_container kbd, .co2ok_container q, .co2ok_container s, .co2ok_container samp,
+.co2ok_container small, .co2ok_container strike, .co2ok_container strong, .co2ok_container sub, .co2ok_container sup, .co2ok_container tt, .co2ok_container var,
+.co2ok_container b, .co2ok_container u, .co2ok_container i, .co2ok_container center,
+.co2ok_container dl, .co2ok_container dt, .co2ok_container dd, .co2ok_container ol, .co2ok_container ul, .co2ok_container li,
+.co2ok_container fieldset, .co2ok_container form, .co2ok_container label, .co2ok_container legend,
+.co2ok_container table, .co2ok_container caption, .co2ok_container tbody, .co2ok_container tfoot, .co2ok_container thead, .co2ok_container tr, .co2ok_container th, .co2ok_container td,
+.co2ok_container article, .co2ok_container aside, .co2ok_container canvas, .co2ok_container details, .co2ok_container embed,
+.co2ok_container figure, .co2ok_container figcaption, .co2ok_container footer, .co2ok_container header, .co2ok_container hgroup,
+.co2ok_container menu, .co2ok_container nav, .co2ok_container output, .co2ok_container ruby, .co2ok_container section, .co2ok_container summary,
+.co2ok_container time, .co2ok_container mark, .co2ok_container audio, .co2ok_container video {
+    /* margin: 0; */
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+
+
+.co2ok_container .co2ok_payoff {
+    margin-top: -2px;
+    font-size: 13px;
+    margin-right: -8px;
+    /* text-align: center; */
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    letter-spacing: -0.0538461em;
+    color: #4D5155 !important;}
+
+.co2ok_container .co2ok_payoff #p .co2ok_info_hitarea img {
+    width: 16px;
+    margin-left: 25px;
+    padding: 0px;
+    display: inline-block; }
+
+.co2ok_container .co2ok_checkbox_container .inner_checkbox_label {
+    position: relative;
+    text-align: initial !important;
+    display: inline-block;
+    font-size: 22px;
+    width: 100%;
+    height: 44px;
+    background-position: center;
+    background-color: transparent !important;
+    background-size: 100%;
+    border-radius: 8px;
+    transition: all 0.4s ease; }
+
+/* .co2ok_container .co2ok_checkbox_container #checkbox {
+    width: 22px;
+    height: 22px;
+    background: #E1E6E7;
+    box-shadow: inset 0px 2px 1px rgba(96, 100, 104, 0.3);
+    border-radius: 3px !important;
+    margin: 11px 0px 14px 10px; } */
+
+.co2ok_container .co2ok_checkbox_container.unselected .make {
+    margin-bottom: 2px;
+    margin-left: 1px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif !important;
+    color: #606468 !important;
+    font-weight: 500; }
+
+.co2ok_container .co2ok_checkbox_container.selected .make {
+    color: white !important;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    font-size: 16px;
+    font-family: Roboto !important;
+    font-weight: 500; }
+
+.co2ok_container_default {
+    width: 275px; !important;
+    border-radius: 12px !important;
+    padding-top: 2px; }
+
+.co2ok_container_default .co2ok_checkbox_container_default.unselected .compensation_amount_default {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #005091 !important;
+    padding-left: 19px;
+    left: -14px;
+    margin-top: 10px;
+    margin-right: 28px;
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-family: Roboto, sans-serif !important; }
+
+    .co2ok_container_default .co2ok_checkbox_container_default.selected .compensation_amount_default {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      white-space: nowrap;
+      color: white;
+      padding-left: 5px;
+      left: -14px;
+      margin-top: 10px !important;
+      margin-right: 30px;
+      float: right !important;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-family: Roboto, sans-serif; }
+
+.co2ok_sp_logo {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -2px;
+}
+
+.logo-hovercard {
+    width: 27%;
+    left: 4px;
+}
+
+img#co2ok_logo {
+  display: inline-block;
+  width: 28px;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 8px 0px 0px 59px;
+  border-radius: 0px !important;
+  position: absolute;
+ }
+
+  .co2ok_container .co2ok_checkbox_container #checkbox_label a {
+    border-radius: 0px;
+    border: none;
+    letter-spacing: 0px;
+    text-align: inherit;
+ }
+
+ .co2ok_container .co2ok_checkbox_container #checkbox {
+  width: 22px;
+  height: 22px;
+  background: #E1E6E7;
+  box-shadow: inset 0px 2px 1px rgba(96, 100, 104, 0.3);
+  border-radius: 3px !important;
+  margin: 11px 0px 14px 10px; }

@@ -1,0 +1,977 @@
+.co2ok_container_default .co2ok_checkbox_container_default .inner_checkbox_label_default:after, .co2ok_container_default .co2ok_checkbox_container_default.selected .inner_checkbox_label_default, .co2ok_container_minimal .co2ok_checkbox_container_minimal.selected .inner_checkbox_label_minimal .comp_amount_label_minimal, .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal, .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal {
+	background: -webkit-linear-gradient(#34D32D -25.09%, #1DBC16 50%, #009B0F 75%, #1F7837 100%);
+	background: -o-linear-gradient(#34D32D -25.09%, #1DBC16 50%, #009B0F 75%, #1F7837 100%);
+	background: linear-gradient(#34D32D -25.09%, #1DBC16 50%, #009B0F 75%, #1F7837 100%); }
+
+.co2ok_container {
+  /* HTML5 display-role reset for older browsers */
+  display: inline-block;
+  position: relative;
+  font-family: Roboto, sans-serif;
+  color: #606468 !important;
+  z-index: 10;
+  margin-left: 3px;
+  cursor: pointer; }
+  .co2ok_container html, .co2ok_container body, .co2ok_container div, .co2ok_container span, .co2ok_container applet, .co2ok_container object, .co2ok_container iframe,
+  .co2ok_container h1, .co2ok_container h2, .co2ok_container h3, .co2ok_container h4, .co2ok_container h5, .co2ok_container h6, .co2ok_container p, .co2ok_container blockquote, .co2ok_container pre,
+  .co2ok_container a, .co2ok_container abbr, .co2ok_container acronym, .co2ok_container address, .co2ok_container big, .co2ok_container cite, .co2ok_container code,
+  .co2ok_container del, .co2ok_container dfn, .co2ok_container em, .co2ok_container img, .co2ok_container ins, .co2ok_container kbd, .co2ok_container q, .co2ok_container s, .co2ok_container samp,
+  .co2ok_container small, .co2ok_container strike, .co2ok_container strong, .co2ok_container sub, .co2ok_container sup, .co2ok_container tt, .co2ok_container var,
+  .co2ok_container b, .co2ok_container u, .co2ok_container i, .co2ok_container center,
+  .co2ok_container dl, .co2ok_container dt, .co2ok_container dd, .co2ok_container ol, .co2ok_container ul, .co2ok_container li,
+  .co2ok_container fieldset, .co2ok_container form, .co2ok_container label, .co2ok_container legend,
+  .co2ok_container table, .co2ok_container caption, .co2ok_container tbody, .co2ok_container tfoot, .co2ok_container thead, .co2ok_container tr, .co2ok_container th, .co2ok_container td,
+  .co2ok_container article, .co2ok_container aside, .co2ok_container canvas, .co2ok_container details, .co2ok_container embed,
+  .co2ok_container figure, .co2ok_container figcaption, .co2ok_container footer, .co2ok_container header, .co2ok_container hgroup,
+  .co2ok_container menu, .co2ok_container nav, .co2ok_container output, .co2ok_container ruby, .co2ok_container section, .co2ok_container summary,
+  .co2ok_container time, .co2ok_container mark, .co2ok_container audio, .co2ok_container video {
+    /* margin: 0; */
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  .co2ok_container article, .co2ok_container aside, .co2ok_container details, .co2ok_container figcaption, .co2ok_container figure,
+  .co2ok_container footer, .co2ok_container header, .co2ok_container hgroup, .co2ok_container menu, .co2ok_container nav, .co2ok_container section {
+    display: block; }
+  .co2ok_container body {
+    line-height: 1; }
+  .co2ok_container ol, .co2ok_container ul {
+    list-style: none; }
+  .co2ok_container blockquote, .co2ok_container q {
+    quotes: none; }
+  .co2ok_container blockquote:before, .co2ok_container blockquote:after,
+  .co2ok_container q:before, .co2ok_container q:after {
+    content: '';
+    content: none; }
+  .co2ok_container table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .co2ok_container .co2ok_adaptive_color {
+    color: white; }
+  .co2ok_container .co2ok_payoff {
+    width: 100%;
+    margin-top: -1px;
+    font-size: 13px;
+    /* text-align: center; */
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    letter-spacing: -0.0538461em;
+    color: #4D5155 !important;
+    width: 110%; }
+
+    /* Payoff text animation */
+    .co2ok_payoff_text{
+      display: inline;
+    }
+    .co2ok_payoff_text span{
+      position: absolute;
+      opacity: 0;
+      overflow: hidden;
+      animation: rotateWord 9s linear infinite 0s;
+    }
+    .co2ok_payoff_text span:nth-child(2) {
+      animation-delay: 3s;
+      font-size: 12px;
+    }
+    .co2ok_payoff_text span:nth-child(3) {
+      animation-delay: 6s;
+      font-size: 12px;
+      margin-top: -2px;
+    }
+    @keyframes rotateWord {
+      0% { opacity: 0; }
+      2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+      30% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+    33% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+    80% { opacity: 0; }
+      100% { opacity: 0; }
+  }
+    /* @keyframes rotateWord {
+      0% { opacity: 0; }
+      2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+      47% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+    50% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+    80% { opacity: 0; }
+      100% { opacity: 0; }
+  } */
+
+    .co2ok_container .co2ok_payoff #p {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: -6px; }
+      .co2ok_container .co2ok_info_keyboardarea {
+        float: right;
+        background-color: transparent !important;}
+      .co2ok_container .co2ok_payoff #p .co2ok_info_hitarea {
+        height: 72px;
+        width: 72px;
+        background-color: transparent !important;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: -17px;
+        position: relative; }
+        .co2ok_container .co2ok_payoff #p .co2ok_info_hitarea img {
+          width: 16px;
+          margin-left: 36px;
+          padding: 0px;
+          display: inline-block; }
+  .co2ok_container .co2ok_adaptive_color_default {
+    font-size: 13px;
+  }
+  .co2ok_container .co2ok_checkbox_container {
+    border-radius: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 54px; }
+    .co2ok_container .co2ok_checkbox_container > * {
+      background-position: center; }
+    .co2ok_container .co2ok_checkbox_container #checkbox_label {
+      background: #fff;
+      border-radius: 12px; }
+    .co2ok_container .co2ok_checkbox_container #checkbox_label a {
+       border-radius: 12px;
+       letter-spacing: 0px;
+       text-align: inherit;
+    }
+    .co2ok_container .co2ok_checkbox_container .inner_checkbox_label {
+      position: relative;
+      text-align: initial !important;
+      display: inline-block;
+      font-size: 22px;
+      width: 100%;
+      height: 44px;
+      background-position: center;
+      background-color: transparent !important;
+      background-size: 100%;
+      border-radius: 10px;
+      transition: all 0.4s ease; }
+      .co2ok_container .co2ok_checkbox_container .inner_checkbox_label:after {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        content: '';
+        z-index: -1;
+        border-radius: 12px; }
+      .co2ok_container .co2ok_checkbox_container .inner_checkbox_label > * {
+        display: inline-block;
+        text-align: initial !important;
+        vertical-align: middle; }
+    .co2ok_container .co2ok_checkbox_container #checkbox {
+      width: 22px;
+      height: 22px;
+      background: #E1E6E7;
+      box-shadow: inset 0px 2px 1px rgba(96, 100, 104, 0.3);
+      border-radius: 3px !important;
+      margin: 10px 0px 14px 8px; }
+    .co2ok_container .co2ok_checkbox_container #co2ok_cart_field {
+      display: none !important; }
+    .co2ok_container .co2ok_checkbox_container.unselected .make {
+      margin-bottom: 2px;
+      font-size: 16px;
+      font-family: Roboto, sans-serif !important;
+      color: #606468 !important;
+      font-weight: 500; }
+    .co2ok_container .co2ok_checkbox_container.selected .make {
+      color: white !important;
+      margin-bottom: 2px;
+      font-size: 16px;
+      font-family: Roboto, sans-serif !important;
+      font-weight: 500; }
+    .co2ok_container .co2ok_checkbox_container.selected .co2ok_payoff {
+      margin-bottom: 400px; }
+    .co2ok_container .co2ok_checkbox_container.selected #checkbox {
+      padding: 2px;
+      background-color: white;
+      background-size: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/vinkje_co2ok.png") !important;
+      font-size: 20px; }
+
+img#co2ok_logo {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 2px 0px 0px 0px;
+  border-radius: 0px !important; }
+
+img#co2ok_logo_minimal {
+  display: inline-block;
+  width: 52px;
+  vertical-align: middle;
+  margin: 3px 0px 0px 0px; }
+
+.co2ok_logo_minimal_info {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  margin: 9px 0px 0px 0px; }
+
+.co2ok_logo_default_info {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  margin: 9px 0px 0px 0px; }
+
+
+
+.co2ok_videoRewardBox_container {
+  position: absolute;
+  width: 345px;
+  height: 250px;
+  background: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif !important;
+  font-size: 0.9em;
+  z-index: 999999;
+  display: none;
+  padding: 10px;
+  border: 3px solid #eee;
+  border-image-slice: 1; }
+  @media (max-width: 768px) {
+    .co2ok_videoRewardBox_container {
+      margin-left: -150px;
+      width: 300px; } }
+  .co2ok_videoRewardBox_container.ShowVideoRewardBox {
+    display: block;
+    opacity: 1; }
+  .co2ok_videoRewardBox_container.VideoRewardBox-hidden {
+    display: none;
+    opacity: 0; }
+  .co2ok_videoRewardBox_container #co2ok_videoReward {
+    padding-bottom: 15px; }
+
+.co2ok_container_default {
+  width: 215px;
+  border-radius: 12px !important;
+  padding-top: 2px; }
+  .co2ok_container_default .co2ok_checkbox_container_default .inner_checkbox_label_default {
+    background: white; }
+  .co2ok_container_default .co2ok_checkbox_container_default.selected {
+    color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    text-shadow: 1px 1px 4px #929292; }
+    .co2ok_container_default .co2ok_checkbox_container_default.selected .compensation_amount_default {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      white-space: nowrap;
+      color: white;
+      padding-left: 19px;
+      left: -14px;
+      margin-top: 11px !important;
+      float: right !important;
+      font-size: 14.5px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-family: Roboto, sans-serif; }
+  .co2ok_container_default .co2ok_checkbox_container_default.unselected .compensation_amount_default {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #05B139 !important;
+    padding-left: 19px;
+    left: -14px;
+    margin-top: 10px;
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-family: Roboto, sans-serif !important; }
+  .co2ok_container_default .co2ok_checkbox_container_default.unselected .make_minimal {
+    font-family: Roboto, sans-serif !important; }
+    .co2ok_container_default .co2ok_checkbox_container_default.unselected .make_minimal a:link, .co2ok_container_default .co2ok_checkbox_container_default.unselected .make_minimal a:visited, .co2ok_container_default .co2ok_checkbox_container_default.unselected .make_minimal a:hover, .co2ok_container_default .co2ok_checkbox_container_default.unselected .make_minimal a:active {
+      letter-spacing: 0px;
+      font-family: Roboto, sans-serif !important;
+      color: #4D5155 !important; }
+
+.co2ok_container_minimal {
+  width: 280px; }
+  .co2ok_container_minimal .co2ok_checkbox_container_minimal {
+    font-weight: 500;
+    margin-bottom: 10px; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal .co2ok_nolink {
+      color: inherit;
+      background-color: transparent !important;
+      margin: 0px;
+      padding: 0px;
+      display: inherit; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal .co2ok_adaptive_color {
+      color: white; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal.selected {
+      box-shadow: none; }
+      .co2ok_container_minimal .co2ok_checkbox_container_minimal.selected .inner_checkbox_label_minimal .comp_amount_label_minimal {
+        color: #05B139 !important; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal {
+      background: #E1E6E7;
+      position: absolute;
+      display: inline-block;
+      font-size: 22px;
+      width: 74px;
+      height: 26px;
+      border-radius: 30px;
+      transition: all 0.4s ease;
+      /* margin-left: -16px; */
+      /* margin-top: -2px; */
+      padding: 5px;
+      border: 10px #06d367;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      text-rendering: optimizeLegibility;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      color: #606468 !important;
+      top: 10px;
+      left: 155px;
+      content: '';
+      z-index: -1; }
+      .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal > * {
+        display: inline-block;
+        vertical-align: middle; }
+      .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal {
+        background: white;
+        position: absolute;
+        display: inline-block;
+        font-size: 22px;
+        width: 69px;
+        height: 22px;
+        border-radius: 23px;
+        transition: all 0.4s ease;
+        margin: 0;
+        padding: 5px;
+        border: 10px #06d367;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        text-rendering: optimizeLegibility;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        top: 2px;
+        bottom: -2px;
+        left: 2.5px;
+        right: -2px;
+        content: '';
+        z-index: -1; }
+        .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal > * {
+          display: inline-block;
+          vertical-align: middle; }
+        .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal .compensation_amount_minimal {
+          position: absolute;
+          white-space: nowrap;
+          margin: 0;
+          font-size: 16px;
+          margin-top: 0px;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          letter-spacing: 0px;
+          font-family: Roboto, sans-serif;
+          margin-bottom: 2px;
+          font-weight: 500; }
+          .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal .compensation_amount_minimal.selected {
+            color: #05B139 !important; }
+          .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .comp_amount_label_minimal .inner_comp_amount_label_minimal .compensation_amount_minimal.unselected {
+            color: #4D5155 !important; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .co2ok_payoff_minimal {
+      position: absolute;
+      padding-left: 10px;
+      font-size: 14px;
+      text-align: center;
+      font-family: Roboto, sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      display: inline-block;
+      letter-spacing: -0.0538461em;
+      top: 19px;
+      margin-left: 66px;
+      color: #4D5155 !important; }
+      .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .co2ok_payoff_minimal #p_minimal {
+        vertical-align: middle;
+        display: inline-block;
+        padding: none;
+        margin-left: 10px; }
+        .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .co2ok_payoff_minimal #p_minimal .co2ok_info_hitarea {
+          height: 72px;
+          width: 72px;
+          background-color: transparent;
+          border-radius: 50%;
+          display: inline-block;
+          margin-left: -20px;
+          position: relative;
+          margin: auto !important;
+          bottom: 30px; }
+          .co2ok_container_minimal .co2ok_checkbox_container_minimal .inner_checkbox_label_minimal .co2ok_payoff_minimal #p_minimal .co2ok_info_hitarea img {
+            width: 18px;
+            margin-top: 27px;
+            display: inline-block; }
+    .co2ok_container_minimal .co2ok_checkbox_container_minimal .co2ok_payoff_sentence_minimal {
+      position: relative;
+      font-size: 10pt;
+      left: 40.5px;
+      top: -5px;
+      letter-spacing: -0.0538461em;
+      display: block;
+      font-family: Roboto, sans-serif !important; }
+    .co2ok_container .make_co2ok_minimal {
+      font-size: 20px;
+      font-family: Roboto, sans-serif !important;
+      color: #606468 !important;
+    }
+
+
+/*start of checkout button hovercard css*/
+
+    .desktop-hidden {
+      display: none;
+    }
+
+
+  html {
+    font-size: initial; }
+
+  .co2ok_infobox_container {
+    position: absolute;
+    width: 310px;
+    background: white;
+    border-radius: 15px !important;
+    box-sizing: border-box !important;
+    font-family: Roboto, sans-serif !important;
+    font-size: 12px !important;
+    z-index: 999999;
+    display: none;
+    padding: 10px !important;
+    border: 3px solid #eee !important;
+    letter-spacing: normal !important;
+    font-weight: normal !important; }
+    .co2ok_infobox_container.ShowInfoBox {
+      display: block;
+      opacity: 1; }
+  .default-exit-area {
+    width: 32px;
+    height: 32px;
+    float: right;
+  }
+  .default-exit-hovercard {
+    font-size: 18px;
+    opacity: 0.5;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+    /* default and minimal button hovercard */
+    .default-wrapper {
+      display: flex;
+      height: 70px;
+      flex-direction: row; }
+
+  .default-steps {
+    margin: auto;
+    color: black !important;
+    text-decoration: none !important;
+    line-height: 1.1rem !important;
+    padding: 18px 0px !important;
+    font-family: Roboto, sans-serif !important;
+    letter-spacing: normal !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    width: 68%; }
+  .step-one {
+    padding-top: 18px;
+  }
+  .step-four {
+    margin-left: 96px;
+  }
+  .default-png {
+    z-index: 1; }
+
+  .default-road-png {
+    position: absolute;
+    width: 70%;
+    left: 51px; }
+
+  .default-top-road {
+    top: 43px; }
+
+  .default-middle-road {
+    margin-top: -40px; }
+
+  .default-bottom-road {
+    margin-top: -43px; }
+
+  .default-left {
+    margin-left: 8px; }
+
+  .default-right {
+    margin-left: 108px; }
+
+  .default-png-right {
+    position: absolute;
+    width: 20%;
+    right: 24px; }
+
+  .default-png-left {
+    display: flex;
+    position: absolute; }
+
+  .default-png-truck {
+    margin-top: -16px;
+    margin-left: -5px ;
+    width: 42%; }
+
+  .default-png-button {
+    position: absolute;
+    width: 19%;
+    right: 26px;
+    margin-top: 11px; }
+
+  .default-png-renewable {
+    width: 24% ;
+    margin-top: 4px;
+    left: 24px; }
+
+  .default-co2ok-hovercard-exit {
+    width: 9%;
+    margin-right: -13px;
+    margin-top: -18px;
+    float: right;
+    opacity: 0.5; }
+
+  .default-co2ok-exit-button {
+    margin-right: -6px;
+    margin-top: 11px;
+    height: 24px; }
+
+  .default-projects {
+    padding: 16px 0px 8px 0px;
+    color: black;
+    margin-left: 6px;
+    margin-bottom: 0px;
+    text-decoration: none !important;
+    line-height: 1.1rem !important;
+    font-family: Roboto, sans-serif !important;
+    letter-spacing: normal !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+  }
+  .default-projects-image {
+    width: 100%;
+  }
+  .co2-image-description {
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+  .default-button-hovercard-links {
+    text-align: center;
+    display: flex;
+    padding-top: 8px !important; }
+
+  .default-logo-hovercard {
+    position: absolute;
+    width: 15%;
+    left: 32px;
+    padding-top: 16px !important; }
+
+  .default-co2ok-button {
+    margin: auto !important;
+    text-decoration: none !important;
+    color: black !important;
+    border: 2px solid #d9d7d7 !important;
+    background: white;
+    border-radius: 5px !important;
+    text-align: center !important;
+    width: 45%;
+    padding: 3px !important;
+    font-style: italic !important;
+    font-size: 13px !important;
+    font-weight: normal !important; }
+
+  .default-co2ok-button:hover {
+    color: black !important;
+    opacity: 1 !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+  }
+
+  .default-branch-png {
+    width: 33%;
+    position: absolute;
+    right: 30px;
+    bottom: -11px;
+    transform: rotate(-56deg);
+    z-index: -1; }
+
+/* mobile hovercard */
+  @media (max-width: 500px) {
+    .co2ok_infobox_container {
+      left: 0 !important;
+      top: 0 !important;
+      position: fixed;
+      width: 100% !important;
+      height: 100vh !important;
+      overflow-y: auto !important;
+      overflow-x: hidden;
+      transform: none !important; }
+    .desktop-hidden {
+      display: block;
+    }
+    .default-road-png {
+      left: 18%;
+      width: 63%;
+    }
+    .step-one {
+      padding-top: 6% !important;
+      width: 59%;
+      margin-left: 12%;
+    }
+    .step-two {
+      margin-left: 34%;
+      margin-top: 2.5%;
+      width: 56%;
+    }
+    .step-three {
+      margin-top: 2%;
+      margin-left: 12%;
+      width: 59%;
+    }
+    .step-four {
+      width: 54%;
+      margin-top: 3%;
+      margin-left: 34%;
+    }
+    .projects-wrapper {
+      margin-top: 24px;
+    }
+    .default-png-right {
+      width: 17%;
+      right: 15%;
+    }
+    .default-png-truck {
+      width: 33%;
+      margin-top: -2%;
+      margin-left: 3%;
+    }
+    .default-png-button {
+      position: absolute;
+      width: 17%;
+      right: 15%;
+      margin-top: 4%;
+    }
+    .default-png-renewable {
+      width: 21%;
+      left: 11%;
+      margin-top: 1%;
+    }
+    .default-button-hovercard-links {
+      margin-top: 8px; }
+
+    .default-logo-hovercard {
+      left: 16px;
+      position: absolute;
+      bottom: 4px; }
+
+    .default-co2ok-button {
+      position: absolute;
+      bottom: 3px;
+      left: 30%; }
+    .default-branch-png {
+      width: 28%;
+      right: 7%;
+      bottom: -20px; }
+  }
+
+  @media (max-width: 375px) {
+    .step-two {
+      margin-top: 1.5%; }
+    .step-three {
+      margin-top: 1%; }
+    .step-four {
+      margin-top: 2%; }
+  }
+
+  @media(max-height: 670px) {
+    .default-co2ok-button {
+      bottom: auto !important; }
+    .default-logo-hovercard {
+      bottom: auto; }
+    .default-branch-png {
+      bottom: -4.5%; }
+  }
+
+  @media (max-width: 320px) {
+    .default-road-png {
+      left: 19%; }
+    .step-one {
+      padding-top: 3% !important; }
+    .step-two {
+      margin-top: 0.5%; }
+    .step-three {
+      margin-top: -4%;
+      width: 54%; }
+    .step-four {
+      margin-top: -2%;
+      width: 55%; }
+    .default-logo-hovercard {
+      bottom: auto; }
+    .default-co2ok-button {
+      bottom: auto !important; }
+    .default-branch-png {
+      bottom: -23%;
+      margin-right: 1%; }
+  }
+
+
+
+
+/*cfp hovercard*/
+  .co2ok_cfp_infobox_container {
+    position: absolute;
+    width: 310px;
+    background: white;
+    border-radius: 15px !important;
+    box-sizing: border-box !important;
+    font-family: Roboto, sans-serif !important;
+    font-size: 12px !important;
+    z-index: 999999;
+    display: none;
+    padding: 10px !important;
+    border: 3px solid #eee !important;
+    letter-spacing: normal !important;
+    font-weight: normal !important; }
+  .co2ok_cfp_infobox_container.ShowInfoBox {
+    display: block;
+    opacity: 1; }
+    .cfp-exit {
+      display: none;
+      font-size: 18px;
+      font-weight: bold;
+      height: 32px;
+      width: 32px;
+      margin: auto;
+      color: #aeaeae;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+    .exit-area {
+      margin: auto;
+      float: right;
+      margin-right: 8px;
+    }
+  .cfp-wrapper {
+    display: flex;
+    flex-direction: row; }
+
+  .cfp-steps {
+    color: black !important;
+    font-size: 11.5px !important;
+    margin: 0 0 1.41575em !important;
+    text-decoration: none;
+    /* padding: 15px 0px !important; */
+    font-family: Roboto, sans-serif !important;
+    letter-spacing: normal !important;
+    line-height: 1.1rem !important;
+    font-weight: normal !important; }
+  .cfp-step-one {
+    padding-top: 0px;
+    display: block;
+    min-height: 70px; }
+  .cfp-step-two {
+    padding-top: 4px;
+    display: block;
+    margin: 0px 0px auto 2px !important; }
+  .cfp-step-three {
+    padding: 8px 0px; }
+  .cfp-road-png {
+    position: absolute;
+    width: 73%;
+    left: 34px; }
+
+  .cfp-top-road {
+    top: 48px; }
+
+  .cfp-bottom-road {
+    margin-top: -50px !important; }
+
+  .cfp-left {
+    width: 70%;
+    margin-left: 4px !important; }
+
+  .cfp-right {
+    width: 64%;
+    margin-left: 90px !important; }
+
+  .cfp-png-right {
+    position: absolute;
+    width: 42%;
+    right: 0px;
+    margin-top: -10px;
+    z-index: 1; }
+
+  .cfp-png-left {
+    display: flex;
+    width: 22%;
+    position: absolute;
+    /* margin-left: 22px; */
+    z-index: 1; }
+
+  .cfp-png-button {
+    position: absolute;
+    width: 19%;
+    right: 29px;
+    margin-top: 30px !important; }
+
+  .cfp-png-renewable {
+    margin-top: -5px;
+    width: 24%; }
+
+  .cfp-co2ok-hovercard-exit {
+    width: 9%;
+    margin-right: -13px;
+    margin-top: -18px;
+    float: right;
+    opacity: 0.5; }
+
+  .cfp-co2ok-exit-button {
+    margin-right: -6px;
+    margin-top: 11px;
+    height: 24px; }
+
+  .cfp-button-hovercard-links {
+    text-align: center;
+    display: flex !important; }
+
+  .cfp-logo-hovercard {
+    position: absolute;
+    width: 15%;
+    left: 23px;
+    padding-top: 6px !important; }
+
+  .cfp-co2ok-button {
+    margin: auto !important;
+    text-decoration: none !important;
+    color: black !important;
+    border: 2px solid #d9d7d7 !important;
+    background: white;
+    border-radius: 5px;
+    text-align: center !important;
+    width: 45% !important;
+    padding: 3px !important;
+    font-style: italic !important;
+    font-size: 13px !important; }
+
+  .cfp-co2ok-button:hover {
+    color: black !important;
+    opacity: 1 !important;
+    font-weight: normal !important;
+    text-decoration: none !important; }
+
+  .hover-card {
+    padding: 16px 0px; }
+
+  .cfp-branch-png {
+    width: 33%;
+    position: absolute;
+    right: 30px;
+    bottom: -11px;
+    transform: rotate(-56deg);
+    z-index: -1; }
+
+  .cfp-project-img {
+    width: 100%;
+    /* padding-top: 8px; */
+    margin: auto;
+  }
+  .cfp-project-img-text {
+    font-size: 9px;
+    text-align: center;
+    color: black;
+    padding-bottom: 16px;
+  }
+
+  @media (max-width: 500px) {
+    .co2ok_cfp_container {
+      left: 0 !important;
+      top: 0 !important;
+      position: fixed !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      transform: none !important;
+      overflow-x: hidden; }
+    .cfp-exit {
+      display: contents;
+    }
+    .cfp-right {
+      padding-top: 10%;
+      margin-left: 30% !important; }
+    .cfp-left {
+      width: 62%;
+      padding-top: 9%; }
+    .cfp-png-right {
+      width: 39%;
+      right: 3%;
+      margin-top: -1%; }
+    .cfp-step-three {
+      padding-top: 12% !important;
+      margin-left: 30% !important; }
+    .cfp-road-png {
+      left: 11%;
+    }
+    .cfp-top-road {
+      top: 8%; }
+    .cfp-bottom-road {
+      margin-top: -12%; }
+    .cfp-png-renewable {
+      margin-top: 3%; }
+    .cfp-button-hovercard-links {
+      text-align: center;
+      display: flex !important; }
+    .cfp-logo-hovercard {
+      position: absolute;
+      bottom: 1%; }
+    .cfp-co2ok-button {
+      position: absolute;
+      bottom: 1%;
+      left: 30%; }
+    .cfp-branch-png {
+      right: 4%;
+      bottom: -2.5%;
+    }
+    .cfp-project-img {
+      padding-top: 2%;
+    }
+    .cfp-project-img-text {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .cfp-left {
+      padding-top: 4%; }
+  }

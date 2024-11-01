@@ -1,0 +1,21 @@
+$green: #06d367;
+$lightGreen: #1ceeaa;
+$white: #fff;
+$font: Roboto, sans-serif;
+$borderRadius: 10px;
+$small: "(max-width: 768px)";
+
+%gradient {
+
+  background: -webkit-linear-gradient(#1DEFAC -50.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+  background: -o-linear-gradient(#1DEFAC -50.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+  background: linear-gradient(#1DEFAC -50.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+}
+
+%backgroundTransition {
+  transition: background-size 1s forwards;
+-moz-transition: background-size 1s forwards;
+-ms-transition: background-size 1s forwards;
+-o-transition: background-size 1s forwards;
+-webkit-transition: background-size 1s forwards;
+}

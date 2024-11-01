@@ -1,0 +1,6 @@
+{
+    "require": {
+        "cbschuld/LogEntries": "^1.0",
+        "wrapi/slack": "^0.1.6"
+    }
+}
